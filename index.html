@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Economics Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="simulatorTitle">Telecom Economics Simulator</h1>
+        <div class="operator-name-container">
+            <label for="operatorName">Operator Name:</label>
+            <input type="text" id="operatorName" placeholder="Enter operator name" value="AT&T">
+        </div>
+        <div class="input-container">
+            <div class="input-group">
+                <h2>Current Values</h2>
+                <label for="totalUsers">Total number of users</label>
+                <input type="number" id="totalUsers" placeholder="Enter number" value="88000000">
+                <label for="churnRate">Monthly churn rate (%)</label>
+                <input type="number" id="churnRate" placeholder="Enter percentage" step="0.01" value="0.84">
+                <label for="arpu">Monthly Average Revenue per User</label>
+                <input type="number" id="arpu" placeholder="Enter amount" step="0.01" value="56.42">
+                <label for="cac">Cost of Acquisition per New User</label>
+                <input type="number" id="cac" placeholder="Enter amount" step="0.01" value="315">
+                <label for="growthRate">Wanted Growth Rate of New Users (%)</label>
+                <input type="number" id="growthRate" placeholder="Enter percentage" step="0.01" value="1">
+            </div>
+            <div class="input-group">
+                <h2>New Values</h2>
+                <label for="newTotalUsers">New Total number of users</label>
+                <input type="number" id="newTotalUsers" placeholder="Enter number" value="88000000">
+                <label for="newChurnRate">New Monthly churn rate (%)</label>
+                <input type="number" id="newChurnRate" placeholder="Enter percentage" step="0.01" value="0.84">
+                <label for="newArpu">New Monthly Average Revenue per User</label>
+                <input type="number" id="newArpu" placeholder="Enter amount" step="0.01" value="56.42">
+                <label for="newCac">New Cost of Acquisition per New User</label>
+                <input type="number" id="newCac" placeholder="Enter amount" step="0.01" value="315">
+                <label for="newGrowthRate">New Wanted Growth Rate of New Users (%)</label>
+                <input type="number" id="newGrowthRate" placeholder="Enter percentage" step="0.01" value="1">
+            </div>
+        </div>
+        <button id="generateBtn">Generate Graph</button>
+        <div id="profitSummary"></div>
+        <div class="chart-container">
+            <canvas id="profitChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

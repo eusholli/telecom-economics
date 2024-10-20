@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.operator-name-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.operator-name-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.operator-name-container input {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profit-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profit-summary h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.profit-summary p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.profit-difference {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profit-difference.positive {
+    color: #27ae60;
+}
+
+.profit-difference.negative {
+    color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
