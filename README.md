@@ -36,7 +36,7 @@ This app is designed to be easily hosted on GitHub Pages. To deploy:
 1. Push the project to a GitHub repository.
 2. Go to the repository settings on GitHub.
 3. In the "Pages" section, select the main branch as the source.
-4. The app will be available at `https://<username>.github.io/<repository-name>`.
+4. The app will be available at [https://<username>.github.io/<repository-name>](https://eusholli.github.io/telecom-economics).
 
 ## License
 
